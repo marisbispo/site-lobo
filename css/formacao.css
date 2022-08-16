@@ -1,0 +1,155 @@
+.formacao{
+  background:#141414;
+}
+
+.formacao-conteudo{
+  max-width: 1200px;
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: 1fr 2fr;
+  padding: 120px 20px;
+  gap: 100px;
+  position:relative;
+}
+
+.formacao-conteudo .subtitulo{
+  color: #000;
+  max-width: 5ch;
+}
+
+.formacao-conteudo::after{
+  content: '';
+  display:block;
+  background: url(../img/detalhe.svg) no-repeat center;
+  position:absolute;
+  width:130px;
+  height:100px;
+  bottom: -50px;
+  left: 20px;
+}
+
+
+.formacao-texto{
+  color: #a3a3a3;
+  font-size: 1.5rem;
+  margin-bottom: 60px;
+}
+
+.faculdade-lista{
+  display:flex;
+  flex-wrap: wrap;
+  gap:20px;
+}
+
+.faculdade{
+  flex: 1;
+  padding: 20px;
+  background: black;
+  position:relative;
+  border-radius: 4px;
+  display: flex;
+  flex-direction: column;
+}
+
+.faculdade-tipo{
+  font-size: .875rem;
+  color: #a3a3a3;
+  text-transform: uppercase;
+  margin-bottom: 10px;
+}
+
+.faculdade-curso{
+  flex: 1;
+  color:white;
+  margin-bottom: 40px;
+  font-size: 1.125rem;
+  line-height: 1.4;
+  position: relative;
+}
+
+.faculdade-curso::before{
+  content: '';
+  position: absolute;
+  height: 20px;
+  width: 4px;
+  background: red;
+  left: -24px;
+}
+
+.faculdade-instituicao{
+  font-size: 1.125rem;
+  color: #a3a3a3;
+}
+
+.formacao-extra{
+  margin-top:30px;
+}
+
+.formacao-extra h3{
+  font-size: 0.875rem;
+  text-transform: uppercase;
+  color: #8f8f8f;
+  margin-bottom: 30px;
+  position:relative;
+}
+
+.formacao-extra li{
+  margin-bottom:20px;
+  color:  #fff;
+  font-size: 1.125rem;
+  line-height: 1.1;
+}
+
+.formacao-extra span{
+  color:  #8f8f8f;
+}
+
+.formacao-extra h3::before{
+  content: '';
+  height: 24px;
+  width: 24px;
+  position: absolute;
+  left: -36px;
+  top:-4px;
+  display:block;
+}
+
+.cursos h3::before{
+  background: url(../img/cursos.svg) no-repeat;
+}
+
+.idiomas h3::before{
+  background: url(../img/idiomas.svg) no-repeat;
+}
+
+.cursos{
+  margin-bottom: 60px;
+}
+
+.cursos li{
+  display:flex;
+  justify-content: space-between;
+}
+
+
+
+@media (max-width: 800px){
+  .formacao-conteudo{
+    grid-template-columns: 1fr;
+    padding: 60px 20px;
+    gap:40px;
+  }
+
+  .formacao .subtitulo{
+    color:white;
+  }
+
+  .formacao-texto{
+    font-size: 1.25rem;
+  }
+
+  .formacao-extra h3::before{
+    position: initial;
+    margin-bottom:10px;
+  }
+}

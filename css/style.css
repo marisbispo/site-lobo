@@ -1,0 +1,20 @@
+@import "./global.css";
+@import "./header.css";
+@import "./introducao.css";
+@import "./experiencia.css";
+@import "./formacao.css";
+@import "./footer.css";
+
+
+
+@media (max-width: 1000px){
+  
+  .titulo{
+    font-size: 3rem;
+  }
+
+  .experiencia-detalhes p {
+    font-size: .875em
+  }
+
+}
